@@ -5,7 +5,7 @@
 **Approach Used**
 
 Designed the Parking lot system using object oriented programming concepts and used design principles for the implementation.
-<img src="diagram.svg" alt="Alt Text" width="600px" height="400px">
+<img src="diagram.svg" alt="Alt Text" width="auto" height="auto">
 
 **Click on diagram.svg in file structure view the full image**
 
