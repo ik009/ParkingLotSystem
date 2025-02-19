@@ -10,7 +10,7 @@ public class Main {
         int numFloors = 0;
         int spotsPerFloor = 0;
 
-        // Input for number of floors
+       
         while (true) {
             try {
                 System.out.print("Enter number of floors: ");
@@ -18,15 +18,15 @@ public class Main {
                 if (numFloors <= 0) {
                     System.out.println("Please enter a positive number.");
                 } else {
-                    break; // Exit loop if input is valid
+                    break; 
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number.");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine();
             }
         }
 
-        // Input for spots per floor
+
         while (true) {
             try {
                 System.out.print("Enter spots per floor: ");
@@ -34,15 +34,15 @@ public class Main {
                 if (spotsPerFloor <= 0) {
                     System.out.println("Please enter a positive number.");
                 } else {
-                    break; // Exit loop if input is valid
+                    break;
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number.");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine();
             }
         }
 
-        // Initialize parking lot
+
         ParkingStrategy strategy = new DefaultParkingStrategy();
         VehicleValidator validator = new DefaultVehicleValidator();
         ParkingLotOperations parkingLot = new ParkingLot(numFloors, spotsPerFloor, strategy, validator);
