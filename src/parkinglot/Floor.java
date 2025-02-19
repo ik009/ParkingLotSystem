@@ -6,7 +6,7 @@ import java.util.List;
 public class Floor  implements FloorOperations {
     private int floorNumber;
     private List<ParkingSpot> spots;
-//adds parking spots on the floor
+    //adds parking spots on the floor
     public Floor(int floorNumber, int numSpots) {
         this.floorNumber = floorNumber;
         this.spots = new ArrayList<>();
