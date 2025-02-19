@@ -1,7 +1,7 @@
 package parkinglot;
 
 
-
+//Checks if entered vehicle type is valid or not
 public class DefaultVehicleValidator implements VehicleValidator {
     @Override
     public boolean isValidVehicleType(String vehicleType) {

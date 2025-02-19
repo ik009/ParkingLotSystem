@@ -12,6 +12,7 @@ public class Main {
 
        
         while (true) {
+            //get valid floor number
             try {
                 System.out.print("Enter number of floors: ");
                 numFloors = scanner.nextInt();
@@ -28,6 +29,7 @@ public class Main {
 
 
         while (true) {
+            //get valid spots per floor
             try {
                 System.out.print("Enter spots per floor: ");
                 spotsPerFloor = scanner.nextInt();

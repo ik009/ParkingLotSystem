@@ -1,7 +1,6 @@
 package parkinglot;
 
 
-
 public interface ParkingLotOperations {
 	String parkVehicle(Vehicle vehicle);
     boolean leaveVehicle(String licensePlate);

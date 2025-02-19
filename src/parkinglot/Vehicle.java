@@ -1,7 +1,7 @@
 package parkinglot;
 
 
-
+// to create different vehicle classes
 public abstract class Vehicle {
     private String licensePlate;
     private VehicleType type;

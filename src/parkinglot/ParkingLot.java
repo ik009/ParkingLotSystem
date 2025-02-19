@@ -8,7 +8,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-
+//map to store vehicle->spot relation
+//Lock for conurrency controls
 public class ParkingLot implements ParkingLotOperations {
     private final List<Floor> floors;
     private final Map<String, ParkingSpot> parkedVehicles;
@@ -31,17 +32,17 @@ public class ParkingLot implements ParkingLotOperations {
     }
 
     
- // In ParkingLot.java (parkVehicle method)
+//To park the vehicle
     @Override
     public String parkVehicle(Vehicle vehicle) {
         lock.lock();
         try {
-            // Existing license plate validation
+
             if (!vehicleValidator.isValidLicensePlate(vehicle.getLicensePlate())) {
                 throw new InvalidVehicleException("Invalid license plate");
             }
 
-            // New: Check if vehicle is already parked
+            
             if (parkedVehicles.containsKey(vehicle.getLicensePlate())) {
                 throw new InvalidVehicleException("Vehicle with license plate " 
                     + vehicle.getLicensePlate() + " is already parked.");
@@ -63,7 +64,7 @@ public class ParkingLot implements ParkingLotOperations {
         }
     }
     
-
+//when vehicle leaves
     @Override
     public boolean leaveVehicle(String licensePlate) {
         lock.lock();
