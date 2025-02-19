@@ -1,7 +1,7 @@
 package parkinglot;
 
 
-//Cclass to create Car
+//Class to create Car
 public class Car extends Vehicle {
     public Car(String licensePlate) {
         super(licensePlate, VehicleType.CAR);

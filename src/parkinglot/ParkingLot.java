@@ -64,7 +64,7 @@ public class ParkingLot implements ParkingLotOperations {
         }
     }
     
-//when vehicle leaves
+    //when vehicle leaves
     @Override
     public boolean leaveVehicle(String licensePlate) {
         lock.lock();
@@ -90,7 +90,7 @@ public class ParkingLot implements ParkingLotOperations {
     @Override
     public int getAvailableSpots(int floorNumber) {
         if (floorNumber < 1 || floorNumber > floors.size()) {
-//        	System.out.print("sdf");
+        //System.out.print("sdf");
             return -1;
         }
         return floors.get(floorNumber - 1).getAvailableSpots();
